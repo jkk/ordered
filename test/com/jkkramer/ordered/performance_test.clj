@@ -1,4 +1,4 @@
-(ns ordered.performance-test
+(ns com.jkkramer.ordered.performance-test
   (:use clojure.test))
 
 (deftest reflection
@@ -11,4 +11,4 @@
          ;; reload map *after* reloading set, then set refers to classes that
          ;; don't exist anymore, and all kinds of bad stuff happens
          ;; (in this test and others)
-         'ordered.map 'ordered.set)))
+         'com.jkkramer.ordered.map 'com.jkkramer.ordered.set)))
