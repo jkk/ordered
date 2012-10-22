@@ -1,10 +1,18 @@
-[![Build Status](https://secure.travis-ci.org/flatland/ordered.png)](http://travis-ci.org/flatland/ordered)
+## Fork
+
+This is a fork of [flatland's ordered](https://github.com/flatland/ordered). Changes made:
+
+* AOT compilation, so that ordered collections can be used in macros
+* Removed `data_readers.clj` to avoid conflicts
+* Changed namespaces to `com.jkkramer.ordered` to avoid conflicts
+
+## Overview
 
 ordered provides sets and maps that maintain the insertion order of their contents.
 
 ## Sets
 
-    (use 'ordered.set)
+    (use 'com.jkkramer.ordered.set)
 
     (ordered-set 4 3 1 8 2)
     => #ordered/set (4 3 1 8 2)
@@ -20,7 +28,7 @@ ordered provides sets and maps that maintain the insertion order of their conten
 
 ## Maps
 
-    (use 'ordered.map)
+    (use 'com.jkkramer.ordered.map)
 
     (ordered-map :b 2 :a 1 :d 4)
     => #ordered/map ([:b 2] [:a 1] [:d 4])
